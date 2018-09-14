@@ -2,14 +2,12 @@ package cap.action;
 
 import cap.bean.Admin;
 import com.opensymphony.xwork2.ActionSupport;
-import com.sun.istack.internal.Interned;
 import org.apache.struts2.interceptor.SessionAware;
 
 import javax.xml.ws.Action;
 import java.util.Map;
 
 
-@ParentPackage("login")
 @Namespace("/")
 @InterceptorRefs(@InterceptorRef(value="mystack"))
 @Results({@Result(name = "success", location = "/index.jsp"),
