@@ -37,22 +37,22 @@ public class AdminDAOxTest {
     @Test
     public void testAddAdmin() {
         AdminDAO adminDAO = (AdminDAO) context.getBean("adminDAOX");
-        Admin admin = new Admin("xxx", "xxx");
+        Admin admin = new Admin("zch", "zch");
         int res = adminDAO.addAdmin(admin);
         assert res == 1;
     }
 
     @Test
     public void testDelAdmin() {
-        AdminDAO adminDAO = (AdminDAO) context.getBean("adminDAOX");
-        int res = adminDAO.delAdmin(18);
+        AdminDAO adminDAO = (AdminDAO) context.getBean("adminDAOx");
+        int res = adminDAO.delAdmin(1);
         assert res == 1;
     }
 
     @Test
     public void testUpdateAdmin() {
-        AdminDAO adminDAO = (AdminDAO) context.getBean("adminDAOX");
-        Admin admin = new Admin(13, "xxx111", "xxx111");
+        AdminDAO adminDAO = (AdminDAO) context.getBean("adminDAOx");
+        Admin admin = new Admin(2, "zch111", "zch111");
         int res = adminDAO.updateAdmin(admin);
         assert res == 1;
 
